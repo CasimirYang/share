@@ -1,4 +1,4 @@
-module github.com/CasimirYang/share
+module share
 
 go 1.14
 

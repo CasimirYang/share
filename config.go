@@ -1,9 +1,8 @@
-package config
+package share
 
 import (
 	"github.com/spf13/viper"
 	"os"
-	"share/log"
 )
 
 func init() {
@@ -13,7 +12,7 @@ func init() {
 
 	err := viper.ReadInConfig()
 	if err != nil {
-		log.SugarLogger.Error("read config failed: %v", err)
+		SugarLogger.Error("read config failed: %v", err)
 		os.Exit(1)
 	}
 }
