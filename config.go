@@ -12,7 +12,7 @@ func init() {
 
 	err := viper.ReadInConfig()
 	if err != nil {
-		SugarLogger.Error("read config failed: %v", err)
+		SugarLogger.Errorf("read config failed: %v", err)
 		os.Exit(1)
 	}
 }
